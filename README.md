@@ -1,130 +1,118 @@
-🌌 DIGITAL VIDHYA
-🏫 Smart Campus Attendance & Digital Classroom Platform
-🎓 Buddha Institute of Technology
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=DIGITAL%20VIDHYA&fontSize=45&fontColor=ffffff&animation=fadeIn" /> </p>
-<p align="center">
+# 🌌 DIGITAL VIDHYA  
+### 🏫 Smart Campus Attendance & Digital Classroom Platform  
+### 🎓 Buddha Institute of Technology  
 
+---
 
+![GitHub stars](https://img.shields.io/github/stars/pooja701691/NEW-HAC?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/pooja701691/NEW-HAC?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-green?style=for-the-badge&logo=node.js)
+![React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-darkgreen?style=for-the-badge&logo=mongodb)
 
+---
 
+## 🌟 Project Overview
 
+**DIGITAL VIDHYA** is a modern **QR-based Smart Attendance System** designed to convert traditional classrooms into a secure **Geo-Verified Digital Campus**.
 
+It prevents proxy attendance using:
 
+- 📍 Geo-Location Validation  
+- 🔐 Secure JWT Authentication  
+- ⏳ 30-Second Dynamic QR Codes  
+- 👩‍🏫 Role-Based Access (Admin / Teacher / Student)
 
+---
 
+## 🚀 Core Features
 
+### 👩‍💼 Admin Module
+- Create & manage **Classrooms**
+- Store **Latitude & Longitude**
+- Monitor attendance logs
 
+### 👨‍🏫 Teacher Module
+- Start **Active Session**
+- Generate **QR Code (30 sec TTL)**
+- View **Live Attendance Count**
+- End session anytime
 
-</p>
-🌟 Project Vision
+### 👨‍🎓 Student Module
+- Secure login
+- Scan QR
+- Auto attendance submission
+- Geo-location verification within classroom radius
 
-DIGITAL VIDHYA is a next-generation Smart Attendance & Classroom Management System designed to transform traditional college infrastructure into a secure, geo-verified digital campus.
+---
 
-It eliminates proxy attendance using:
+## 🔐 Security Features
 
-📍 Geo-Location Validation
+- JWT Authentication  
+- Password hashing with bcrypt  
+- Rate Limiting  
+- CORS Protection  
+- QR Expiry Validation  
+- Geo-Fence Distance Verification  
 
-🔐 Secure JWT Authentication
+---
 
-📲 Time-Limited Dynamic QR Codes
+## 🗺️ System Workflow
 
-👩‍🏫 Role-Based Access (Admin / Teacher / Student)
+1. Admin creates classroom with geo-coordinates  
+2. Teacher starts attendance session  
+3. System generates QR (valid for 30 seconds)  
+4. Student scans QR  
+5. Browser captures GPS location  
+6. Backend verifies distance  
+7. Attendance marked if inside allowed radius  
 
-🧊 Glassmorphism Inspired Architecture
-+-------------------+
-|   Admin Panel     |
-|  (Manage Rooms)   |
-+-------------------+
-          ↓
-+-------------------+
-| Teacher Dashboard |
-|  Start Session    |
-|  Generate QR      |
-+-------------------+
-          ↓
-+-------------------+
-|   QR (30 sec)     |
-|  Geo-Validated    |
-+-------------------+
-          ↓
-+-------------------+
-| Student Scanner   |
-|  Auto Attendance  |
-+-------------------+
-🚀 Core Features
-👩‍💼 Admin Module
+---
 
-Create & manage Classrooms
+## 🛠️ Tech Stack
 
-Upload Geo Coordinates
+| Layer        | Technology |
+|-------------|------------|
+| Frontend    | React.js + TailwindCSS + ShadCN UI |
+| Backend     | Node.js + Express.js |
+| Database    | MongoDB |
+| Auth        | JWT |
+| QR Engine   | qrcode npm package |
+| Security    | bcrypt, express-rate-limit |
 
-Monitor session logs
+---
 
-👨‍🏫 Teacher Module
+## 📦 Installation
 
-Start Active Session
+### 1️⃣ Clone Repository
 
-Auto-Generate QR (30 sec TTL)
-
-View Live Attendance Count
-
-Close session anytime
-
-👨‍🎓 Student Module
-
-Secure Login
-
-Scan QR
-
-Auto Post Attendance
-
-Location Verification within classroom radius
-
-🔐 Security Layer
-
-✔ JWT Token Authentication
-✔ Rate Limiting
-✔ QR Expiry (Auto Invalid after 30 sec)
-✔ Geo-Fence Radius Validation
-✔ Role Based Middleware
-
-🗺️ Geo Location Flow
-
-Admin saves classroom latitude & longitude
-
-Teacher starts session linked to classroom
-
-Student scans QR
-
-Browser fetches GPS
-
-Backend verifies distance
-
-Attendance marked if inside radius
-
-🛠️ Tech Stack
-Layer	Technology
-Frontend	React.js + TailwindCSS + ShadCN UI
-Backend	Node.js + Express.js
-Database	MongoDB
-Authentication	JWT
-QR Engine	qrcode npm package
-Security	bcrypt, rate-limit, CORS
-📊 Animated Workflow
-<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&size=22&center=true&vCenter=true&width=600&lines=Admin+Creates+Classroom;Teacher+Starts+Session;QR+Generates+(30s);Student+Scans;Geo+Verified;Attendance+Marked+Securely" /> </p>
-📦 Installation Guide
-1️⃣ Clone Repository
+```bash
 git clone https://github.com/pooja701691/NEW-HAC.git
 cd NEW-HAC
-2️⃣ Backend Setup
+```
+
+### 2️⃣ Backend Setup
+
+```bash
 cd backend
 npm install
 npm start
-3️⃣ Frontend Setup
+```
+
+### 3️⃣ Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm run dev
-📁 Project Structure
+```
+
+---
+
+## 📁 Project Structure
+
+```
 NEW-HAC/
 │
 ├── backend/
@@ -140,20 +128,28 @@ NEW-HAC/
 │   ├── hooks/
 │
 └── README.md
-🎯 Use Case
+```
 
-✔ Colleges
-✔ Universities
-✔ Coaching Institutes
-✔ Hackathon Demonstrations
-✔ Smart Campus Initiatives
+---
 
-🏆 Why This Project Stands Out
+## 🎯 Use Cases
 
-💎 Modern UI
-📍 Location-Based Validation
-⚡ Real-Time Session Handling
-🔒 Enterprise-Ready Security
-🏫 Buddha Institute Smart Campus Vision
+- Colleges  
+- Universities  
+- Coaching Institutes  
+- Smart Campus Initiatives  
+- Hackathon Demonstrations  
 
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1c1c1c,100:2c5364&height=120&section=footer"/> </p>
+---
+
+## 🏆 Why DIGITAL VIDHYA?
+
+- Modern UI  
+- Real-Time QR Attendance  
+- Geo-Based Validation  
+- Enterprise-Level Security  
+- Scalable Architecture  
+
+---
+
+## 🚀 Transforming Traditional Classrooms into Smart Digital Campuses
