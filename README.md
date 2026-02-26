@@ -1,132 +1,159 @@
-🚀 Smart Campus QR Attendance System
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=200&section=header&text=Smart%20QR%20Attendance%20System&fontSize=35&fontColor=ffffff&animation=fadeIn" /> </p> <p align="center"> <img src="https://img.shields.io/github/stars/your-username/your-repo?style=for-the-badge" /> <img src="https://img.shields.io/github/forks/your-username/your-repo?style=for-the-badge" /> <img src="https://img.shields.io/github/license/your-username/your-repo?style=for-the-badge" /> <img src="https://img.shields.io/github/issues/your-username/your-repo?style=for-the-badge" /> </p> <p align="center"> <img src="https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/Framework-Express-black?style=for-the-badge&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/Database-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/> <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/Auth-JWT-blue?style=for-the-badge"/> </p>
-📌 About The Project
+🌌 DIGITAL VIDHYA
+🏫 Smart Campus Attendance & Digital Classroom Platform
+🎓 Buddha Institute of Technology
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=DIGITAL%20VIDHYA&fontSize=45&fontColor=ffffff&animation=fadeIn" /> </p>
+<p align="center">
 
-A production-ready QR-Based Smart Attendance System designed for modern campuses.
 
-It ensures:
 
-📍 GPS-based classroom verification
 
-🔐 Secure JWT authentication
 
-⏳ 30-second dynamic QR expiry
 
-🚫 Proxy attendance prevention
 
-🧠 Backend validation enforcement
 
-🏗 System Workflow
-✨ Key Features
-👨‍💼 Admin Panel
 
-Map-based classroom location selection
 
-Session activation
 
-Live session badge (Active / Expired)
 
-Secure QR generation
+</p>
+🌟 Project Vision
 
-👩‍🎓 Student Module
+DIGITAL VIDHYA is a next-generation Smart Attendance & Classroom Management System designed to transform traditional college infrastructure into a secure, geo-verified digital campus.
 
-QR scan interface
+It eliminates proxy attendance using:
 
-Auto GPS capture
+📍 Geo-Location Validation
 
-Real-time attendance submission
+🔐 Secure JWT Authentication
 
-🔐 Security Highlights
+📲 Time-Limited Dynamic QR Codes
 
-Role-based route protection
+👩‍🏫 Role-Based Access (Admin / Teacher / Student)
 
-Time-limited QR token
+🧊 Glassmorphism Inspired Architecture
++-------------------+
+|   Admin Panel     |
+|  (Manage Rooms)   |
++-------------------+
+          ↓
++-------------------+
+| Teacher Dashboard |
+|  Start Session    |
+|  Generate QR      |
++-------------------+
+          ↓
++-------------------+
+|   QR (30 sec)     |
+|  Geo-Validated    |
++-------------------+
+          ↓
++-------------------+
+| Student Scanner   |
+|  Auto Attendance  |
++-------------------+
+🚀 Core Features
+👩‍💼 Admin Module
 
-Haversine distance calculation
+Create & manage Classrooms
 
-Backend-only validation logic
+Upload Geo Coordinates
 
-📂 Project Structure
-client/
- ├── components/
- ├── pages/
- ├── context/
- ├── routes/
+Monitor session logs
 
-server/
- ├── models/
- ├── controllers/
- ├── routes/
- ├── middleware/
- ├── utils/
-⚙️ Installation
-1️⃣ Clone Repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-2️⃣ Backend Setup
-cd server
-npm install
-npm run dev
+👨‍🏫 Teacher Module
 
-Create .env file:
+Start Active Session
 
-PORT=5000
-MONGO_URI=your_mongo_connection
-JWT_SECRET=your_secret_key
-3️⃣ Frontend Setup
-cd client
-npm install
-npm run dev
-🧠 Security Logic
+Auto-Generate QR (30 sec TTL)
 
-Attendance is approved only if:
+View Live Attendance Count
 
-Session Active
-AND QR Not Expired
-AND Distance ≤ Allowed Radius
+Close session anytime
 
-All validations happen on backend.
+👨‍🎓 Student Module
 
-📊 Tech Stack
+Secure Login
+
+Scan QR
+
+Auto Post Attendance
+
+Location Verification within classroom radius
+
+🔐 Security Layer
+
+✔ JWT Token Authentication
+✔ Rate Limiting
+✔ QR Expiry (Auto Invalid after 30 sec)
+✔ Geo-Fence Radius Validation
+✔ Role Based Middleware
+
+🗺️ Geo Location Flow
+
+Admin saves classroom latitude & longitude
+
+Teacher starts session linked to classroom
+
+Student scans QR
+
+Browser fetches GPS
+
+Backend verifies distance
+
+Attendance marked if inside radius
+
+🛠️ Tech Stack
 Layer	Technology
-Frontend	React, Tailwind, React Router
-Backend	Node.js, Express
+Frontend	React.js + TailwindCSS + ShadCN UI
+Backend	Node.js + Express.js
 Database	MongoDB
-Auth	JWT + bcrypt
-Maps	React Leaflet
-QR	Dynamic Token Based
-🌍 Classroom Geo Verification
+Authentication	JWT
+QR Engine	qrcode npm package
+Security	bcrypt, rate-limit, CORS
+📊 Animated Workflow
+<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&size=22&center=true&vCenter=true&width=600&lines=Admin+Creates+Classroom;Teacher+Starts+Session;QR+Generates+(30s);Student+Scans;Geo+Verified;Attendance+Marked+Securely" /> </p>
+📦 Installation Guide
+1️⃣ Clone Repository
+git clone https://github.com/pooja701691/NEW-HAC.git
+cd NEW-HAC
+2️⃣ Backend Setup
+cd backend
+npm install
+npm start
+3️⃣ Frontend Setup
+cd frontend
+npm install
+npm run dev
+📁 Project Structure
+NEW-HAC/
+│
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── controllers/
+│
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   ├── hooks/
+│
+└── README.md
+🎯 Use Case
 
-Each classroom stores:
+✔ Colleges
+✔ Universities
+✔ Coaching Institutes
+✔ Hackathon Demonstrations
+✔ Smart Campus Initiatives
 
-Latitude
+🏆 Why This Project Stands Out
 
-Longitude
+💎 Modern UI
+📍 Location-Based Validation
+⚡ Real-Time Session Handling
+🔒 Enterprise-Ready Security
+🏫 Buddha Institute Smart Campus Vision
 
-Allowed radius (meters)
-
-Students must be physically inside the defined GPS radius.
-
-🏆 Future Roadmap
-
-📈 Live attendee counter
-
-📊 Attendance analytics dashboard
-
-📱 Mobile application
-
-🔄 Auto QR refresh every 30 sec
-
-🎭 Face recognition integration
-
-📸 Screenshots (Add Your UI Here)
-Add screenshots inside /screenshots folder
-Then use:
-
-![Dashboard](./screenshots/dashboard.png)
-![QR Screen](./screenshots/qr.png)
-📜 License
-
-MIT License © 2026
-
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,100:0f2027&height=120&section=footer"/> </p>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1c1c1c,100:2c5364&height=120&section=footer"/> </p>
